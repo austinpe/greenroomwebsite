@@ -1,0 +1,111 @@
+<!-- Container -->
+<div class="container">
+
+    <!-- Section Title -->
+
+    <div class="section-title">
+        <div class="row">
+
+            <div class="col-sm-12">
+                <h1 class="text-center">The Taproom</h1>
+                <span class="border"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="text-center">
+                    Green Room Brewing is Jacksonville Beach's first microbrewery!
+                    Our goal is to bring great, locally made beer to the Beaches and beyond.
+                    We brew beers that interest the casual drinker and the beer aficionado.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--/Section Title -->
+
+
+    <div class="row">
+
+
+        <div class="col-sm-6 col-md-3 tapRoomItem">
+            <div ng-if="isOpen()">
+                <div class="taproomicon">
+                    <i class="fa fa-unlock"></i>
+                </div>
+                <h5>Currently OPEN</h5>
+            </div>
+
+            <div ng-if="!isOpen()">
+                <div class="taproomicon">
+                    <i class="fa fa-lock"></i>
+                </div>
+                <h5>Currently CLOSED</h5>
+            </div>
+
+
+            <div class="hoursOfOp">
+                <table class="hourstable">
+                    <tr>
+                        <td class="days">All Mondays</td>
+                        <td class="hours">Closed!</td>
+                    </tr>
+                    <tr>
+                        <td class="days">Tue to Thur</td>
+                        <td class="hours">4pm to 12am</td>
+                    </tr>
+                    <tr>
+                        <td class="days">Fridays</td>
+                        <td class="hours">4pm to 2am</td>
+                    </tr>
+                    <tr>
+                        <td class="days">Saturdays</td>
+                        <td class="hours">12pm to 2am</td>
+                    </tr>
+                    <tr>
+                        <td class="days">Sundays</td>
+                        <td class="hours">12pm to 10pm</td>
+                    </tr>
+                </table>
+            </div>
+
+
+        </div>
+
+        <div class="col-sm-6 col-md-3 tapRoomItem">
+            <div class="taproomicon">
+                <a href="#ontap"><i class="fa fa-thumbs-up"></i></a>
+            </div>
+            <h5>16 Taps</h5>
+            <div class="tapInfoContainer">
+            <ul class="tapRoomTapInfo">
+                <li><i class="fa fa-angle-right"></i>7 Permanent Taps</li>
+                <li><i class="fa fa-angle-right"></i>9 Rotating Taps</li>
+                <li><i class="fa fa-angle-right"></i>New Beer Every Thursday</li>
+                <li><i class="fa fa-angle-right"></i>Guest Beers From FL Breweries</li>
+            </ul>
+                </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3 tapRoomItem">
+            <div class="taproomicon">
+                <i class="fa fa-heart"></i>
+            </div>
+            <h5>Dogs Welcome</h5>
+            <p>Feel free to bring that furry friend of yours to the bar! Just make sure that the pup has a leash and can play well with others.</p>
+        </div>
+
+        <div class="col-sm-6 col-md-3 tapRoomItem">
+            <div class="taproomicon">
+                <i class="fa fa-cutlery"></i>
+            </div>
+            <h5>Bring your own food</h5>
+            <p>A great beer can complement a good meal. However, we don't serve food, so feel free to bring your own! A binder of menus of restaurants that deliver is available at the bar!</p>
+        </div>
+
+
+
+    </div>
+
+
+</div>
+<!--/Container -->

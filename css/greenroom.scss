@@ -1,0 +1,181 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+//Required for Angular UI
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+//Gets rid of bullet points on lists
+ul {
+  list-style-type: none;
+}
+
+
+@import "normalize";
+@import "variables";
+@import "patterns";
+
+@import "nav";
+@import "intro";
+@import "taproom";
+@import "onTap";
+//@import "about-beer";
+@import "events";
+@import "contact";
+@import "newsletter";
+@import "images";
+@import "footer";
+
+//Green Room Font
+/*@font-face{
+  font-family: publicsquare;
+  src: url("../fonts/PublicSquare.otf") format("opentype");
+}*/
+
+@font-face {
+  font-family: "publicsquare";
+  src: url("../fonts/publicsquare.eot");
+  src: url("../fonts/publicsquare.eot#iefix") format("embedded-opentype"),
+  url("../fonts/publicsquare.woff") format("woff"),
+  url("../fonts/publicsquare.ttf") format("truetype");
+
+}
+
+//iframes stuff
+iframe{
+  width: 100%;
+}
+
+
+//little border line that goes below titles
+.border {
+  background: none repeat scroll 0 0 #515151;
+  display: block;
+  height: 2px;
+  width: 100px;
+  margin: 0 auto 40px;
+
+}
+.border.white{
+  background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+p, td, li {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.section-title{
+  color: #222;
+  margin-bottom: 50px;
+  h1 {
+    font-size: 36px;
+    margin-bottom:5px;
+    letter-spacing:1px;
+  }
+  p {
+    font-size: 14px;
+    max-width: 750px;
+    margin: 0 auto 40px;
+    font-weight: 600;
+    text-align: justify;
+  }
+}
+
+.padSection {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.padBottomContainer {
+  padding-bottom: 60px;
+}
+
+.section-title {
+  margin-bottom: 0;
+}
+
+.categoryName {
+  text-align: center;
+}
+
+.columnGroup {
+  padding: 0;
+}
+
+
+
+#taproom {
+  background-color: $tapRoomColor;
+}
+
+#ontap {
+  background-color: $onTapColor;
+}
+
+#beer {
+  background-color: $beerInfoColor;
+}
+
+#events {
+  background-color: $eventsColor;
+}
+
+#newsletter {
+  background-color: $newsletterColor;
+}
+
+#photos {
+  background-color: $photosColor;
+}
+
+#contact {
+  background-color: $contactColor;
+}
+
+#footer {
+  background-color: $footerColor;
+}
+
+
+//Media Queries
+
+@media (min-width: 992px) {
+  .extrawide {
+    width: 95%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .extrawide {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .extrawide {
+    width: 80%;
+  }
+}
+
+/*lu-callout{
+  display: inline-block;
+}*/
+
+/*
+.callout-hide {
+  display: none;
+}
+*/
+
+lu-callout {
+  position: fixed;
+  z-index: 777;
+  width: 100%;
+  text-align: center;
+}

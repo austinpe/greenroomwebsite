@@ -1,0 +1,77 @@
+<!-- Container -->
+<div class="container padBottomContainer">
+
+    <!-- Section Title -->
+
+    <div class="row">
+        <div class="section-title">
+            <div class="col-sm-12">
+                <h1 class="text-center">What's Going On</h1>
+                <span class="border"></span>
+            </div>
+        </div>
+    </div>
+    <!--/Section Title -->
+
+
+    <div class="row">
+        <!-- Upcoming Beer -->
+        <div class="col-md-4" >
+            <h4 class="categoryName">Upcoming Beer</h4>
+            <ul class="columnGroup">
+                <li ng-repeat="beer in permItems" class="slats">
+                    <span ng-if="beer.out" ng-class="{slatOUT: beer.out}">OUT</span>
+                    {{beer.name}}
+                    <div class="pull-right" ng-class="{slat_style: beer.style.length < 13, slat_style_long: beer.style.length >= 13}">
+                        {{beer.style}}
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Upcoming Music -->
+        <div class="col-md-4" >
+            <h4 class="categoryName">Upcoming Music</h4>
+            <ul class="columnGroup">
+                <li ng-repeat="beer in seasonalItems" ng-if="beer.onTapNow" class="slats">
+                            <span ng-class="{name_long:beer.name.length >= 17}">
+                                {{beer.name | fixCaseAndIPA}}
+                            </span>
+                    <div class="pull-right" ng-class="{slat_style: beer.style.length < 13, slat_style_long: beer.style.length >= 13}">
+                        {{beer.style | fixCaseAndIPA}}
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Announcements -->
+        <div class="col-md-4">
+            <h4 class="categoryName">Announcements</h4>
+            <ul class="columnGroup">
+                <li ng-repeat="item in upcomingBeer" class="eventCard">
+
+                        <div class="when">
+                            <div class="month">Aug</div>
+                            <div class="day">Fri</div>
+                            <div class="date">21st</div>
+
+                        </div>
+
+                        <div class="details">
+                            <div class="title">{{item.text}}</div>
+                            <div class="description">{{item.subtext}}</div>
+                        </div>
+
+
+                </li>
+            </ul>
+            <!--<h4 ng-if="sizeOfGuestItems(guestItems) === 0" class="noGuest">We don't have any guest beers on tap right now. Check back later!</h4>-->
+        </div>
+
+
+    </div>
+
+
+
+</div>
+<!--/Container -->

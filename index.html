@@ -1,0 +1,855 @@
+<!doctype html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Jacksonville Beach’s first microbrewery whose primary goal is to bring great, locally made beer to the Beaches area and beyond." />
+    <meta name="keywords" content="brew,brewery,microbrew,microbrewery,beer,ale,ipa,barleywine,lager,stout,pilsner,porter,jacksonville,jacksonville beach,florida,distribution,bold city,swamphead,cigar city,saint somewhere, engine 15, aardwolf, beer, beaches, beach bar" />
+    <!-- TODO: Set Apple Icons-->
+    <!--<link rel="apple-touch-icon" href="apple-touch-icon.png">-->
+
+    <!-- TODO: update favicon-->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+
+    <!--Title-->
+    <title>Green Room Brewing</title>
+
+    <!-- For Facebook -->
+    <meta property="og:type" content="website" />
+
+    <meta property="og:title" content="Green Room Brewing" />
+    <meta property="og:description" content="Jacksonville Beach's First Microbrewery" />
+    <!-- TODO: Set this-->
+    <meta property="og:image" content="http://greenroombrewing.com/img/greenroom-og.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="182" />
+
+    <!--CSS-->
+
+    <!-- Bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ui-bootstrap-custom-1.1.2-csp.css">
+
+
+
+    <!-- Optional theme -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">-->
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,200italic,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css' />
+    <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <link href='//fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="css/greenroom.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.7/slick-theme.min.css"/>
+
+
+
+
+    <!--Javascript-->
+    <!-- Angular -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+
+    <!-- jQuery :( -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>-->
+
+
+
+    <!-- Slick Carousel-->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+
+    <!-- ngAnimate-->
+    <script src="//code.angularjs.org/1.4.9/angular-animate.min.js"></script>
+
+    <!-- Angular Touch-->
+    <script src="//code.angularjs.org/1.4.9/angular-touch.min.js"></script>
+
+
+
+
+
+
+
+
+    <!-- UI Router-->
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>-->
+
+    <!-- Firebase-->
+    <!--<script src="//cdn.firebase.com/js/client/2.2.7/firebase.js"></script>-->
+    <!--<script src="//cdn.firebase.com/libs/angularfire/1.1.2/angularfire.min.js"></script>-->
+
+    <!-- Lodash-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.0/lodash.min.js"></script>
+
+    <!--Fast Click-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+
+
+
+
+    <!-- Angular UI Bootstrap-->
+    <!-- Only with modules: collapse, accordion, alert, bind html, buttons, position, dropdown, transition -->
+    <script src="js/lib/ui-bootstrap-custom-tpls-1.1.2.min.js"></script>
+
+
+    <!-- Angular Google Maps -->
+    <script src="//maps.google.com/maps/api/js"></script>
+    <script src="js/lib/ng-map.min.js"></script>
+
+
+    <!-- Scroll-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-scroll/0.7.1/angular-scroll.min.js"></script>
+
+
+
+    <!--Green Room App-->
+    <script src="js/greenroom.js"></script>
+    <script src="js/controllers/greenRoomCtrl.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/lu-client.css"/>
+    <script src="js/lu-client.min.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>-->
+    <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+
+
+
+
+
+
+</head>
+<body ng-app="greenRoom" ng-controller="greenRoomCtrl" ng-cloak>
+<!--<div ng-hide="loaded">
+    <p>Loading</p>
+</div>-->
+<div >
+
+
+
+    <!------------ Navigation -------------------->
+    <!------------------------------------------------------------------>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand">
+                <img src="img/gr-logo-wave.png" alt="Green Room Logo" height="45px">
+                <div class="brand-text">Green Room</div>
+            </div>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-responsive-collapse" collapse="navCollapsed">
+            <ul class="nav navbar-nav navbar-right">
+                <li du-scrollspy="taproom" du-smooth-scroll="taproom">
+                    <a href="#taproom" >Taproom</a>
+                </li>
+                <li du-scrollspy="ontap" du-smooth-scroll="ontap">
+                    <a href="#ontap" >On Tap</a>
+                </li>
+<!--                <li du-scrollspy="beer" du-smooth-scroll="beer">
+                    <a href="#beer" >Our Beer</a>
+                </li>-->
+                <li du-scrollspy="events" du-smooth-scroll="events">
+                    <a href="#events" >Events</a>
+                </li>
+                <li du-scrollspy="photos" du-smooth-scroll="photos">
+                    <a href="#photos" >Photos</a>
+                </li>
+                <li du-scrollspy="contact" du-smooth-scroll="contact">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+
+    </nav>
+
+
+
+    <!------------ Alert -------------------->
+    <!------------------------------------------------------------------>
+
+    <lu-callout class="alert alert-danger" uid="77777" ng-hide="hidecallout" ng-click="hidecallout = true"></lu-callout>
+
+
+
+    <!------------ Intro -------------------->
+    <!------------------------------------------------------------------>
+    <section id="intro">
+        <div class="introBackground pattern led">
+            <div class="container">
+                <div class="welcome text-center">
+                    <p class="welcome-text text-shadow">Welcome to <br /> Green Room Brewing</p>
+                    <p class="twentyonewarning text-shadow">We do not support underage drinking.</p>
+                    <p class="twentyonewarning text-shadow">By viewing this site, you acknowledge that you are over the age of 21.</p>
+                    <span class="border white"></span>
+                    <div class="intoButtonBlock">
+                        <div class="twentyonebutton" du-smooth-scroll="taproom">Continue</div>
+                        <div class="twentyonebutton ontap" du-smooth-scroll="ontap">Tap List</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!------------ Tap Room Information -------------------->
+    <!------------------------------------------------------------------>
+    <section id="taproom" class="padSection">
+        <!-- Container -->
+        <div class="container">
+
+            <!-- Section Title -->
+
+            <div class="section-title">
+                <div class="row">
+
+                    <div class="col-sm-12">
+                        <h1 class="text-center">The Taproom</h1>
+                        <span class="border"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="text-center">
+                            Green Room Brewing is Jacksonville Beach's first microbrewery!
+                            Our goal is to bring great, locally made beer to the Beaches and beyond.
+                            We brew beers that interest the casual drinker and the beer aficionado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--/Section Title -->
+
+
+            <div class="row">
+
+
+                <div class="col-sm-6 col-md-3 tapRoomItem">
+                    <div ng-if="isOpen()">
+                        <div class="taproomicon">
+                            <i class="fa fa-unlock"></i>
+                        </div>
+                        <h5>Currently OPEN</h5>
+                    </div>
+
+                    <div ng-if="!isOpen()">
+                        <div class="taproomicon">
+                            <i class="fa fa-lock"></i>
+                        </div>
+                        <h5>Currently CLOSED</h5>
+                    </div>
+
+
+                    <div class="hoursOfOp">
+                        <table class="hourstable">
+                            <tr>
+                                <td class="days">All Mondays</td>
+                                <td class="hours">Closed!</td>
+                            </tr>
+                            <tr>
+                                <td class="days">Tue to Thur</td>
+                                <td class="hours">4pm to 12am</td>
+                            </tr>
+                            <tr>
+                                <td class="days">Fridays</td>
+                                <td class="hours">4pm to 2am</td>
+                            </tr>
+                            <tr>
+                                <td class="days">Saturdays</td>
+                                <td class="hours">12pm to 2am</td>
+                            </tr>
+                            <tr>
+                                <td class="days">Sundays</td>
+                                <td class="hours">12pm to 10pm</td>
+                            </tr>
+                        </table>
+                    </div>
+
+
+                </div>
+
+                <div class="col-sm-6 col-md-3 tapRoomItem">
+                    <div class="taproomicon">
+                        <a href="#ontap"><i class="fa fa-thumbs-up"></i></a>
+                    </div>
+                    <h5>16 Taps</h5>
+                    <div class="tapInfoContainer">
+                        <ul class="tapRoomTapInfo">
+                            <li><i class="fa fa-angle-right"></i>7 Permanent Taps</li>
+                            <li><i class="fa fa-angle-right"></i>9 Rotating Taps</li>
+                            <li><i class="fa fa-angle-right"></i>New Beer Every Thursday</li>
+                            <!--<li><i class="fa fa-angle-right"></i>Guest Beers From FL Breweries</li>-->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 tapRoomItem">
+                    <div class="taproomicon">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <h5>Dogs Welcome</h5>
+                    <p>Feel free to bring that furry friend of yours to the bar! Just make sure that the pup has a leash and can play well with others.</p>
+                </div>
+
+                <div class="col-sm-6 col-md-3 tapRoomItem">
+                    <div class="taproomicon">
+                        <i class="fa fa-cutlery"></i>
+                    </div>
+                    <h5>Bring your own food</h5>
+                    <p>A great beer can complement a good meal. However, we don't serve food, so feel free to bring your own! A binder of menus of restaurants that deliver is available at the bar!</p>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+        <!--/Container -->
+    </section>
+
+
+
+    <!------------ On Tap -------------------->
+    <!------------------------------------------------------------------>
+    <section id="ontap" class="padSection" >
+        <!-- Container -->
+        <div class="container padBottomContainer extrawide">
+
+            <!-- Section Title -->
+
+
+            <div class="section-title">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 class="text-center">On Tap Now</h1>
+                        <span class="border"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="text-center sub-description">
+                            Click/Tap on a beer for more information
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--/Section Title -->
+
+            <!-- Lightning Update Items-->
+
+            <lu-taplist uid="77777" category-color="333" category-font-weight="500"></lu-taplist>
+
+            <!-- Pre LightningUpdate-->
+            <!--<div class="pre-lightningupdate">
+                <div class="row">
+                    &lt;!&ndash; PERMTAPS &ndash;&gt;
+                    <div class="col-md-4" >
+                        <h4 class="categoryName">Permanent Taps</h4>
+                        <ul class="columnGroup">
+                            <li ng-repeat="beer in permItems" class="slats">
+                                <span ng-if="beer.out" ng-class="{slatOUT: beer.out}">OUT</span>
+                                {{beer.name}}
+                                <div class="pull-right" ng-class="{slat_style: beer.style.length < 13, slat_style_long: beer.style.length >= 13}">
+                                    {{beer.style}}
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    &lt;!&ndash; Seasonal &ndash;&gt;
+                    <div class="col-md-4" >
+                        <h4 class="categoryName">Seasonal / One-Offs</h4>
+                        <ul class="columnGroup">
+                            <li ng-repeat="beer in seasonalItems" ng-if="beer.onTapNow" class="slats">
+                            <span ng-class="{name_long:beer.name.length >= 17}">
+                                {{beer.name | fixCaseAndIPA}}
+                            </span>
+                                <div class="pull-right" ng-class="{slat_style: beer.style.length < 13, slat_style_long: beer.style.length >= 13}">
+                                    {{beer.style | fixCaseAndIPA}}
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    &lt;!&ndash; GUEST BEERS &ndash;&gt;
+                    <div class="col-md-4">
+                        <h4 class="categoryName">Guest Beer</h4>
+                        <ul class="columnGroup">
+                            <li ng-repeat="beer in guestItems" ng-if="beer.onTapNow" class="slats">
+                            <span ng-class="{guestbeer: beer.brewery.length + beer.name.length < 22, guestbeer_long:beer.brewery.length + beer.name.length >= 22}">
+                                {{beer.brewery}} - {{beer.name}}
+                            </span>
+                            <span class="pull-right" ng-class="{slat_style: beer.style.length < 13, slat_style_long: beer.style.length >= 13}">
+                                {{beer.style}}
+                            </span>
+                            </li>
+                        </ul>
+                        <h4 ng-if="sizeOfGuestItems(guestItems) === 0" class="noGuest">We don't have any guest beers on tap right now. Check back later!</h4>
+                    </div>
+                </div>
+
+
+            </div>-->
+            <!-- End pre-lightningUpdate-->
+
+
+
+        </div>
+        <!--/Container -->
+    </section>
+
+
+    <!------------ Beer Info -------------------->
+    <!------------------------------------------------------------------>
+<!--    <section id="beer" class="padSection" >
+        &lt;!&ndash; Container &ndash;&gt;
+        <div class="container onTapContainer">
+
+            &lt;!&ndash; Section Title &ndash;&gt;
+
+            <div class="section-title">
+                <div class="row">
+
+                    <div class="col-sm-12">
+                        <h1 class="text-center">Our Beer</h1>
+                        <span class="border"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="text-center sub-description">
+                            We have seven permanent beers, but check out what's on tap for our rotating
+                            speciality brews as well as guest beers. A new beer is tapped once a week
+                            on Thursdays, but many of these are small batches and go very quickly!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            &lt;!&ndash;/Section Title &ndash;&gt;
+
+
+            <div class="row">
+                <h4 class="about-beer-toggle-title text-center">Click a Beer For More Information</h4>
+            </div>
+
+            <div class="row">
+                <div class="about-beer-toggles col-xs-12">
+                    <div class="customAccordion">
+                        <accordion close-others="false">
+                            <accordion-group ng-repeat="beer in permBeerInfo" is-open="status.open">
+                                <accordion-heading>
+                                    <div class="toggleBeerName">
+                                        {{beer.name}}
+                                    </div>
+                                    <div class="toggleBeerSubTitle">
+                                        <span class="beerStyle">{{beer.style}}</span>
+                                        <span class="divider">|</span>
+                                        <span class="beerABV">{{beer.abv}}% ABV</span>
+                                        <span class="divider">|</span>
+                                        <span class="beerIBU">{{beer.ibu}} IBUs</span>
+                                    </div>
+                                </accordion-heading>
+                                <div>
+                                    {{beer.description}}
+                                </div>
+                            </accordion-group>
+
+                        </accordion>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        &lt;!&ndash;/Container &ndash;&gt;
+    </section>-->
+
+
+    <!------------ Events -------------------->
+    <!------------------------------------------------------------------>
+    <section id="events" class="padSection" >
+        <!-- Container -->
+        <div class="container padBottomContainer">
+
+            <!-- Section Title -->
+
+            <div class="row">
+                <div class="section-title">
+                    <div class="col-sm-12">
+                        <h1 class="text-center">What's Going On</h1>
+                        <span class="border"></span>
+                    </div>
+                </div>
+            </div>
+            <!--/Section Title -->
+
+
+            <div class="row alert-container">
+                <div class="col-sm-12">
+                    <div >
+                        <!-- height="18px"-->
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- height = "300px"-->
+                <lu-events uid="77777" accent-color="333"></lu-events>
+            </div>
+
+            <!--            <div class="pre-lightningupdate">
+                            <div class="row">
+                                &lt;!&ndash; Upcoming Beer &ndash;&gt;
+                                <div class="col-md-4" >
+                                    <h4 class="categoryName">Upcoming Beer</h4>
+                                    <ul class="columnGroup">
+                                        <li ng-repeat="beer in permItems" class="slats">
+                                            <span ng-if="beer.out" ng-class="{slatOUT: beer.out}">OUT</span>
+                                            {{beer.name}}
+                                            <div class="pull-right" ng-class="{slat_style: beer.style.length < 13, slat_style_long: beer.style.length >= 13}">
+                                                {{beer.style}}
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                &lt;!&ndash; Upcoming Music &ndash;&gt;
+                                <div class="col-md-4" >
+                                    <h4 class="categoryName">Upcoming Music</h4>
+                                    <ul class="columnGroup">
+                                        <li ng-repeat="beer in seasonalItems" ng-if="beer.onTapNow" class="slats">
+                                        <span ng-class="{name_long:beer.name.length >= 17}">
+                                            {{beer.name | fixCaseAndIPA}}
+                                        </span>
+                                            <div class="pull-right" ng-class="{slat_style: beer.style.length < 13, slat_style_long: beer.style.length >= 13}">
+                                                {{beer.style | fixCaseAndIPA}}
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                &lt;!&ndash; Announcements &ndash;&gt;
+                                <div class="col-md-4">
+                                    <h4 class="categoryName">Announcements</h4>
+                                    <ul class="columnGroup">
+                                        <li ng-repeat="item in upcomingBeer" class="eventCard">
+
+                                            <div class="when">
+                                                <div class="month">Aug</div>
+                                                <div class="day">Fri</div>
+                                                <div class="date">21st</div>
+
+                                            </div>
+
+                                            <div class="details">
+                                                <div class="title">{{item.text}}</div>
+                                                <div class="description">{{item.subtext}}</div>
+                                            </div>
+
+
+                                        </li>
+                                    </ul>
+                                    &lt;!&ndash;<h4 ng-if="sizeOfGuestItems(guestItems) === 0" class="noGuest">We don't have any guest beers on tap right now. Check back later!</h4>&ndash;&gt;
+                                </div>
+
+
+                            </div>
+                        </div>-->
+
+
+
+        </div>
+        <!--/Container -->
+    </section>
+
+
+
+
+    <!------------ Photos -------------------->
+    <!------------------------------------------------------------------>
+    <section id="newsletter" class="padSection">
+        <div class="container ">
+            <!-- Section Title -->
+
+            <div class="row">
+                <div class="section-title">
+                    <div class="col-sm-12">
+                        <h1 class="text-center">Sign Up For Our Newsletter</h1>
+                        <span class="border"></span>
+                    </div>
+                </div>
+            </div>
+            <!--/Section Title -->
+
+            <div class="row newsletter">
+
+                <!-- Begin MailChimp Signup Form -->
+                <div style="margin-top: 5px">
+                    <form action="//greenroombrewing.us5.list-manage.com/subscribe/post?u=467425a228882a193013312f0&amp;id=7f68bace9c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup">
+
+                            <div class="newsletter_input_fields">
+
+                            <div class="mc-field-group">
+                                <label for="mce-EMAIL"></label>
+                                <input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL">
+                            </div>
+                            <div class="mc-field-group">
+                                <label for="mce-FNAME"></label>
+                                <input type="text" value="" placeholder="First Name" name="FNAME" class="required" id="mce-FNAME">
+                            </div>
+                            <div class="mc-field-group">
+                                <label for="mce-LNAME"></label>
+                                <input type="text" value="" placeholder="Last Name" name="LNAME" class="required" id="mce-LNAME">
+                            </div>
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;">
+                                <input type="text" name="b_467425a228882a193013312f0_7f68bace9c" tabindex="-1" value="">
+                            </div>
+
+                            </div>
+
+                            <div class="clear" style="text-align: center">
+                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="newsletter_button send_message contact-button">
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                <!--End mc_embed_signup-->
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!------------ Photos -------------------->
+    <!------------------------------------------------------------------>
+    <section id="photos" class="padSection">
+        <div class="container padBottomContainer">
+            <!-- Section Title -->
+
+            <div class="row">
+                <div class="section-title">
+                    <div class="col-sm-12">
+                        <h1 class="text-center">Photos</h1>
+                        <span class="border"></span>
+                    </div>
+                </div>
+            </div>
+            <!--/Section Title -->
+
+            <div class="row">
+                <div class="barImages">
+                    <div>
+                        <img src="img/carousel/fooseball_small.jpg">
+                    </div>
+                    <div>
+                        <img src="img/carousel/couchgames_action_small.jpg">
+                    </div>
+                    <div>
+                        <img src="img/carousel/pingpong_small.jpg">
+                    </div>
+                    <div>
+                        <img src="img/carousel/sampler_small.jpg">
+                    </div>
+                    <div>
+                        <img src="img/carousel/livemusic_small.jpg">
+                    </div>
+                    <div>
+                        <img src="img/carousel/jenga_winner_small.jpg">
+                    </div>
+                    <div>
+                        <img src="img/carousel/games_small.jpg">
+                    </div>
+                    <div>
+                        <img src="img/carousel/couple+samples_small.jpg">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!------------ Contact -------------------->
+    <!------------------------------------------------------------------>
+    <section id="contact" class="padSection " >
+        <!-- Container -->
+        <div class="container ">
+
+            <!-- Section Title -->
+
+            <div class="row">
+                <div class="section-title">
+                    <div class="col-sm-12">
+                        <h1 class="text-center">Contact Us</h1>
+                        <span class="border"></span>
+                    </div>
+                </div>
+            </div>
+            <!--/Section Title -->
+
+
+            <div class="row">
+
+
+
+                <!-- Phone -->
+                <div class="col-md-12" >
+                    <div class="contact-block">
+                        <div class="phone">
+                            <a href="tel:904-201-9283">
+                            <i class="fa fa-fw fa-phone"></i>
+                            904-201-WAVE
+                            </a>
+                        </div>
+
+<!--                        <div class="email">
+                            <i class="fa fa-2x fa-fw fa-envelope-o"></i>
+                            Send Us A Message!
+                        </div>-->
+
+                        <div class="address">
+                            <i class="fa fa-2x fa-fw fa-map-marker"></i>
+                            228 3rd St North. Jacksonville Beach, FL 32250
+                        </div>
+                    </div>
+
+
+                </div>
+                </div>
+            <div class="row">
+
+                <!-- Map -->
+                <div class="col-md-12" >
+                    <map center="30.2900218, -81.3926046" zoom="16">
+                        <!-- Todo change icon-->
+                        <marker position="30.290711, -81.392602" title="Green Room"></marker>
+                    </map>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="row">
+                <!-- todo add animation-->
+                <!-- Contact Formular -->
+                <div id="contact-formular">
+
+                    <div id="message"></div>
+
+                    <form method="post" action="contact.php" name="contactform" id="contactform">
+
+                        <div class="col-sm-6">
+                            <label for="name"></label>
+                            <input name="name" type="text" id="name" size="30"  placeholder="Name" >
+
+                            <label for="email"></label>
+                            <input name="email" type="text" id="email" size="30" placeholder="E-mail" >
+
+                            <label for="phone"></label>
+                            <input name="phone" type="text" id="phone" size="30" placeholder="Phone" >
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="comments"></label><textarea name="comments" cols="40" rows="4" id="comments" onfocus="if(this.value == 'Message') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Message'; }" >Message</textarea>
+                        </div>
+
+                        <input type="submit" class="send_message contact-button" id="submit" value="Send Message" />
+
+                    </form>
+
+                </div>
+                <!--/Contact Formular -->
+            </div>
+
+
+
+        </div>
+        <!--/Container -->
+    </section>
+
+
+    <!------------ Footer -------------------->
+    <!------------------------------------------------------------------>
+    <section id="footer" >
+        <hr>
+        <div class="container footer">
+
+            <div class="social-icons">
+                <div><a href="https://www.facebook.com/GreenRoomBrewing"><i class="fa fa-2x fa-fw fa-facebook"></i></a></div>
+                <div><a href="https://twitter.com/greenroombrew"><i class="fa fa-2x fa-fw fa-twitter"></i></a></div>
+
+            </div>
+
+            <p>Website designed and maintained by Austin Philipp-Edmonds</p>
+            <p>Photos by <a href="http://vickipalombo.zenfolio.com/" target="_blank">Photographic Memories</a></p>
+            <p class="copyright">2016 &copy; Green Room Brewing. All rights reserved.</p>
+
+
+        </div>
+
+    </section>
+
+
+
+<!--Google Analytics-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-66583121-1', 'auto');
+    ga('send', 'pageview');
+
+
+    $(document).ready(function(){
+        $('.barImages').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+//                lazyLoad: 'ondemand',
+            slidesToScroll: 1
+        });
+    });
+
+
+</script>
+</div>
+</body>
+</html>

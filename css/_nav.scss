@@ -1,0 +1,112 @@
+$nav_bar_height: 50px;
+
+//MUST be here because of nav bar
+body {
+  padding-top: $nav_bar_height;
+}
+
+.navbar {
+  background-color: #2B4950;
+  border-color: #2B4950;
+}
+
+.navbar-default {
+  box-sizing: border-box;
+  border: none;
+
+  .navbar-collapse{
+    text-align: center;
+
+
+
+  }
+
+
+
+  .navbar-brand {
+    width: 245px;
+
+      > img {
+        position: absolute;
+
+        top: 3.2px;
+        //top: 3px;
+
+        //top: 50%;
+        //transform: translateY(-50%);
+
+
+      }
+
+    > .brand-text {
+      padding-left: 85px;
+      //float: left;
+      font-family: 'publicsquare', 'Montserrat', sans-serif;
+      color: white;
+      font-size: 30px;
+      letter-spacing: 1.4px;
+    }
+  }
+
+
+  .navbar-toggle {
+    border-color: white;
+
+    .icon-bar {
+      background-color: white;
+    }
+
+    &:hover{
+      background-color: white;
+      border-color: #28444A;
+      .icon-bar{
+        background-color: #28444A;
+      }
+    }
+  }
+
+
+
+  .navbar-nav {
+
+    .active > a {
+
+      color: #2B4950;
+      background-color: white;
+      font-weight: bold;
+
+      &:focus {
+        background-color: white;
+      }
+    }
+
+    > li > a {
+      color: white;
+      font-weight: normal;
+
+      &:hover, &:focus {
+        color: #2B4950;
+        background-color: white;
+        //font-weight: bold;
+        //transition: color 1000ms linear, font-weight 1000ms linear;
+      }
+    }
+  }
+}
+
+
+
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navbar-default{
+    padding-right: 30px;
+  }
+}
+
+
+

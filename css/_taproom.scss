@@ -1,0 +1,95 @@
+p, td, li {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.tapRoomItem {
+  //clear: both;
+  text-align: center;
+  height: 195px;
+  margin: 0 auto 40px;
+  //padding: 0;
+
+  p {
+    text-align: justify;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+};
+
+.tapInfoContainer{
+  display: flex;
+  justify-content: center;
+
+  .tapRoomTapInfo {
+    text-align: left;
+    margin: 0 auto;
+
+    .fa {
+      margin-right: 5px;
+    }
+  }
+
+}
+
+
+.taproomicon {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+
+  .fa {
+    color: #2B4950;
+  }
+
+}
+
+.hoursOfOp {
+  //width: 90%;
+  margin: 0 auto;
+
+  .hourstable{
+    margin: 0 auto;
+
+    .tr{
+      margin-top: 10px;
+    }
+
+    .days{
+      text-align: right;
+      padding-right:20px;
+    }
+
+    .hours{
+      text-align: left;
+      border-left: 1px solid #222222;
+      padding-left: 20px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .hoursOfOp .hourstable {
+    font-size: 13px;
+
+
+  }
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }

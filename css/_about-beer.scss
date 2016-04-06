@@ -1,0 +1,113 @@
+#beer {
+  .section-title {
+    margin-bottom: 5px;
+  }
+
+  //hack to get rid of underline on active toggle
+  //*{
+  //  text-decoration: none;
+  //}
+}
+
+.about-beer-toggle-title {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+
+}
+
+.about-beer-toggles {
+  max-width: 500px;
+  margin: 0 auto;
+  float: none;
+}
+
+//the open panel
+.customAccordion {
+
+
+  //Closed Panel Style
+  .panel-heading {
+
+    //panel header color + text options
+    background-color: #2B4950;
+    color: white;
+    :hover{
+      text-decoration: none;
+    }
+
+
+
+
+    //Title Beer Name Options
+    .toggleBeerName {
+      font-family: "Lobster", sans-serif;
+      text-transform: none;
+      font-size: 26px;
+    }
+
+
+    //Sub title of panel
+    .toggleBeerSubTitle{
+      text-transform: none;
+      margin-top: 5px;
+      font-size: 10px;
+
+      .divider {
+        margin: 0 4px;
+      }
+
+      .beerStyle{
+
+      }
+
+      .beerIBU{
+
+      }
+
+      .beerABV {
+      }
+
+    }
+
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  //Open Panel Style
+  .panel-open{
+    .panel-heading {
+      background-color: #53B3A8;
+      text-decoration: none;
+    }
+  }
+
+  .panel-body {
+    //open panel background color + text options
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F5F2E7;
+    color: #2B4950;
+    font-weight: 600;
+    border: none;
+
+  }
+
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .toggleBeerSubTitle {
+    font-size: 13px !important;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }

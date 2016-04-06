@@ -1,0 +1,61 @@
+<!-- Container -->
+<div class="container onTapContainer">
+
+    <!-- Section Title -->
+
+    <div class="section-title">
+        <div class="row">
+
+            <div class="col-sm-12">
+                <h1 class="text-center">Our Beer</h1>
+                <span class="border"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="text-center sub-description">
+                    We have seven permanent beers, but check out what's on tap for our rotating
+                    speciality brews as well as guest beers. A new beer is tapped once a week
+                    on Thursdays, but many of these are small batches and go very quickly!
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--/Section Title -->
+
+
+    <div class="row">
+        <h4 class="about-beer-toggle-title text-center">Click a Beer For More Information</h4>
+    </div>
+
+    <div class="row">
+        <div class="about-beer-toggles col-xs-12">
+            <div class="customAccordion">
+                <accordion close-others="false">
+                    <accordion-group ng-repeat="beer in permBeerInfo" is-open="status.open">
+                        <accordion-heading>
+                            <div class="toggleBeerName">
+                                {{beer.name}}
+                            </div>
+                            <div class="toggleBeerSubTitle">
+                                <span class="beerStyle">{{beer.style}}</span>
+                                <span class="divider">|</span>
+                                <span class="beerABV">{{beer.abv}}% ABV</span>
+                                <span class="divider">|</span>
+                                <span class="beerIBU">{{beer.ibu}} IBUs</span>
+                            </div>
+                        </accordion-heading>
+                        <div>
+                            {{beer.description}}
+                        </div>
+                    </accordion-group>
+
+                </accordion>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+<!--/Container -->
