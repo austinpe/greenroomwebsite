@@ -3,20 +3,6 @@
 app.controller("greenRoomCtrl", ['$scope', '$filter', function($scope, $filter){
 
 
-    $scope.loaded = true;
-    angular.element(document).ready(function(){
-        $scope.loaded = true;
-
-        //console.log($location);
-        //console.log($location.$$path.slice(1));
-        //$uiViewScroll('#ontap');
-
-
-        //$location.hash($location.$$path.slice(1));
-        //$anchorScroll();
-        //switch($location.path)
-    });
-
     //--------- TAP ROOM INFO ------------
     //-----------------------------------------------------------
     var dateToday = Date.now();
@@ -40,21 +26,6 @@ app.controller("greenRoomCtrl", ['$scope', '$filter', function($scope, $filter){
         return _.contains(hoursOfOperation[currentDay], currentHour);
     };
 
-
-    //--------- On Tap Now ------------
-    //-----------------------------------------------------------
-
-    //var ref = new Firebase("https://greenroombrewing.firebaseio.com/");
-
-    //$scope.permItems = $firebaseArray(ref.child('Permanent'));
-
-    //$scope.seasonalItems = $firebaseArray(ref.child('Seasonals'));
-
-    //$scope.guestItems = $firebaseArray(ref.child('Guest'));
-
-    //$scope.sizeOfGuestItems = function(items){
-    //    return _.size(_.filter(items, 'onTapNow', true));
-    //};
 
 
     //--------- About Beer ------------
@@ -110,56 +81,5 @@ app.controller("greenRoomCtrl", ['$scope', '$filter', function($scope, $filter){
             'description': "Just like Shaka... but with chocolate!"
         }
     };
-
-
-    //--------- Events ------------
-    //-----------------------------------------------------------
-    //$scope.upcomingBeer = $firebaseArray(ref.child('Upcoming').child('Beer'));
-
-    //$scope.upcomingMusic = $firebaseArray(ref.child('Upcoming').child('Music'));
-
-    //$scope.upcomingEvents = $firebaseArray(ref.child('Upcoming').child('Events'));
-
-
-    //--------- Photos ------------
-    //-----------------------------------------------------------
-    $scope.barImages = [
-
-    ];
-
-
-    //--------- Contact ------------
-    //-----------------------------------------------------------
-
-    /*uiGmapGoogleMapApi.then(function(maps) {
-
-        $scope.map = {
-            center: {
-                latitude: 30.2900218,
-                longitude: -81.3926046
-            },
-            zoom: 16,
-            options: {
-                disableDefaultUI: !0,
-                mapTypeControl: !1,
-                tilt: 45
-            }
-        };
-
-        $scope.marker = {
-            id: 0,
-            coords: {
-                latitude: 30.290711,
-                longitude: -81.392602
-            },
-            options: {
-                animation: 2
-            }
-        }
-
-    });*/
-
-
-
 
 }]);

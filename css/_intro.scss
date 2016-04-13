@@ -82,6 +82,19 @@ $background-image: '../img/greenroomoutside-edit-min.jpg';
   .intoButtonBlock {
 
 
+    div {
+      a {
+        margin-left: 0;
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    > :last-child {
+      margin-left: 20px;
+    }
+
+
 
     .twentyonebutton {
       box-sizing: border-box;
@@ -111,10 +124,6 @@ $background-image: '../img/greenroomoutside-edit-min.jpg';
         //font-size: 5px;
       }
 
-    }
-
-    :last-child {
-      margin-left: 20px;
     }
 
   }

@@ -169,9 +169,10 @@ body { padding-top: 50px; }
 .welcome * { z-index: 2; }
 .welcome .welcome-text { font-family: 'publicsquare', 'Montserrat', sans-serif; font-size: 40px; margin-bottom: 40px; z-index: 2; }
 .welcome .twentyonewarning { font-size: 12px; font-weight: bold; }
+.welcome .intoButtonBlock div a { margin-left: 0; text-decoration: none; color: inherit; }
+.welcome .intoButtonBlock > :last-child { margin-left: 20px; }
 .welcome .intoButtonBlock .twentyonebutton { box-sizing: border-box; display: inline-block; border: 3px solid white; padding: 15px; border-radius: 6px; font-weight: bold; cursor: pointer; overflow: hidden; background-color: rgba(46, 46, 46, 0.3); }
 .welcome .intoButtonBlock .twentyonebutton:hover { background-color: white; color: #AAAAAA; transition: background-color .5s ease, color .5s ease; }
-.welcome .intoButtonBlock :last-child { margin-left: 20px; }
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */

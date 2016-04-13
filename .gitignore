@@ -32,6 +32,7 @@ coverage
 /js/lu-client.min.js
 /img
 /css/lu-client.css
+/.sass-cache
 build/Release
 
 # Dependency directory
